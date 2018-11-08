@@ -54,7 +54,7 @@ class InteractiveRecord
     DB[:conn].execute(sql)
   end
   
-  def self.find_by(hash)
+  def self.find_by(attribute)
     p hash.keys[0].to_s
     p hash.values[0].to_s
     sql = <<-SQL 
