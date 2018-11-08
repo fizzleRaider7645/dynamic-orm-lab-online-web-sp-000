@@ -59,6 +59,7 @@ class InteractiveRecord
     sql = <<-SQL
       SELECT *
       FROM #{self.table_name}
+      WHERE
     SQL
   end
 end
