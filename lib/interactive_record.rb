@@ -58,7 +58,7 @@ class InteractiveRecord
     p hash.keys[0].to_s
     p hash.values[0].to_s
     sql = <<-SQL 
-      SELECT * FROM #{self.table_name} WHERE #{attribute.keys[0].to_s} = '#{attribute.values.first.to_s}'
+      SELECT * FROM #{self.table_name} WHERE #{attribute.keys.first.to_s} = '#{attribute.values.first.to_s}'
     SQL
     DB[:conn].execute(sql)
   end
