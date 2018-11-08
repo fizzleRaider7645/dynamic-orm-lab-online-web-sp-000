@@ -59,7 +59,7 @@ class InteractiveRecord
     sql = <<-SQL
       SELECT *
       FROM #{self.table_name}
-      WHERE
+      WHERE #{attribute.keys}
     SQL
   end
 end
