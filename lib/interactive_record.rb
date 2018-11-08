@@ -61,5 +61,6 @@ class InteractiveRecord
       FROM #{self.table_name}
       WHERE #{attribute.keys} = #{attribute.values}
     SQL
+    DB[:conn].execute(sql)
   end
 end
