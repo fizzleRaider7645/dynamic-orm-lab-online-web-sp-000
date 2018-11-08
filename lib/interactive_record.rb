@@ -58,6 +58,7 @@ class InteractiveRecord
     p attribute.keys
     sql = <<-SQL
       SELECT *
+      FROM #{self.table_name}
     SQL
   end
 end
