@@ -50,6 +50,7 @@ class InteractiveRecord
    end
    
    def self.find
-     
+     sql = <<-SQL
+     SQL
    end
 end
